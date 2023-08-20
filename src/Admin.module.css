@@ -1,0 +1,11 @@
+.Admin {
+  text-align: center;
+  cursor: auto;
+}
+
+input.Numeric {
+  font-size: 40px;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+}

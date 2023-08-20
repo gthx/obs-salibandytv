@@ -1,0 +1,57 @@
+.Numeric {
+  border: 2px solid #ddd;
+  display: inline-flex;
+  height:100%;
+}
+
+.Numeric input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.Numeric input[type=number]::-webkit-inner-spin-button,
+.Numeric input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.Numeric input[type=number] {
+  font-family: sans-serif;
+  max-width: 5rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 2rem;
+  height: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Numeric button {
+  outline:none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.Numeric button::after {
+  /* display: inline-block;
+  position: absolute; */
+  font-size: 2rem;
+}
+
+.Numeric button:first-of-type::after {
+  content: '-';
+  /* transform: translate(-50%, -50%) rotate(0deg); */
+}
+
+.Numeric button:last-of-type::after {
+  content: '+';
+  /* transform: translate(-50%, -50%) rotate(0deg); */
+}
