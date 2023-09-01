@@ -1,6 +1,9 @@
 .Admin {
   text-align: center;
   cursor: auto;
+  position:absolute;
+  bottom:0;
+  right:0;
 }
 
 input.Numeric {
