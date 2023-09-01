@@ -5,13 +5,18 @@ export function Scoreboard() {
   const [score] = useScore();
   return (
     <div class={styles.Scoreboard}>
-      <h1>{score.periodText}</h1>
-      <div>
-        <span>{score.home}</span>
-        &dash;
-        <span>{score.away}</span>
+      <div class={styles.Container}>
+        <img class={styles.Logo} src='https://kirkkonummirangers.fi/wp-content/uploads/2022/05/logo.png' />
+        <div class={styles.HomeColor}></div>
+        <div class={styles.HomeTeam}>{"RAN"}</div>
+        <div class={styles.HomeScore}>{score.home}</div>
+        <img class={styles.Logo} src='https://www.hawks.fi/wp-content/uploads/2021/08/Hawks_Logo_200x200.png' />
+        <div class={styles.AwayColor}></div>
+        <div class={styles.AwayTeam}>{"HAW"}</div>
+        <div class={styles.AwayScore}>{score.away}</div>
+        <div class={styles.Period}>{score.periodText}</div>
+        <div class={styles.Time}>{score.timeText}</div>
       </div>
-      <h2>{score.timeText}</h2>
     </div>
   );
 }

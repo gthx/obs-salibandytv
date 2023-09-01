@@ -6,10 +6,107 @@
   background-color: transparent;
 }
 
-.logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  margin-top: 0.5em;
+  display: grid;
+  width: 40%;
+  grid-template-columns: 15% 30% 15% 0% 15% 30% 15%;
+  grid-template-rows: 0.1em 1.5em 0.7em;
+  font-size: 36px;
+  grid-template-areas: 
+    ". home-color  . . . away-color ."
+    "home-logo home-team home-score logo away-score away-team away-logo"
+    ". . period logo time . .";
+  text-align: center;
+  font-family: 'commandocommando';
+  user-select: none;
 }
+
+.HomeColor {
+  grid-area: home-color;
+  background-color: white;
+  background: linear-gradient(
+    to right,
+    blue 20% 20%,
+    white 20%
+  );
+  border-right: 1px solid rgb(84, 44, 140);
+}
+
+.HomeTeam {
+  grid-area: home-team;
+  background-color: rgb(84, 44, 140);
+  color: white;
+  width: 100%;
+  line-height: 170%;
+}
+
+.HomeScore {
+  grid-area: home-score;
+  background-color: rgb(84, 44, 140);
+  color: white;
+  line-height: 170%;
+}
+
+.AwayColor {
+  grid-area: away-color;
+  background: linear-gradient(
+    to left,
+    black 20% 20%,
+    yellow 20%
+  );
+  border-left: 1px solid rgb(84, 44, 140);
+}
+
+.AwayScore {
+  grid-area: away-score;
+  background-color: rgb(84, 44, 140);
+  color: white;
+  width: 100%;
+  line-height: 170%;
+}
+
+.AwayTeam {
+  grid-area: away-team;
+  background-color: rgb(84, 44, 140);
+  color: white;
+  line-height: 170%;
+}
+
+.Period {
+  grid-area: period;
+  font-size: .5em;
+  background-color: white;
+  color: rgb(84, 44, 140);
+  border-left: 1px solid rgb(84, 44, 140);
+  border-bottom: 1px solid rgb(84, 44, 140);
+}
+
+.Time {
+  grid-area: time;
+  font-size: .5em;
+  background-color: white;
+  color: rgb(84, 44, 140);
+  border-right: 1px solid rgb(84, 44, 140);
+  border-bottom: 1px solid rgb(84, 44, 140);
+  font-kerning: none;
+}
+
+img:nth-of-type(1) {
+  grid-area: home-logo;
+  place-self: center;
+}
+
+img:nth-of-type(2) {
+  grid-area: away-logo;
+  place-self: center;
+}
+
+.Logo {
+  height: 50%;
+}
+
+
 
 .header {
   background-color: #282c34;
