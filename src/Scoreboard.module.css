@@ -26,8 +26,8 @@
   background-color: white;
   background: linear-gradient(
     to right,
-    blue 20% 20%,
-    white 20%
+    white 20% 20%,
+     blue 20%
   );
   border-right: 1px solid rgb(84, 44, 140);
 }
@@ -51,8 +51,8 @@
   grid-area: away-color;
   background: linear-gradient(
     to left,
-    black 20% 20%,
-    yellow 20%
+    white 20% 20%,
+    red 20%
   );
   border-left: 1px solid rgb(84, 44, 140);
 }
@@ -102,7 +102,8 @@ img:nth-of-type(2) {
 }
 
 .Logo {
-  height: 50%;
+  height: 150%;
+  z-index: 10;
 }
 
 
