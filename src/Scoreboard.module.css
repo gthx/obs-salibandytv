@@ -7,6 +7,7 @@
 
 .Container {
   margin-top: 0.5em;
+  margin-left: 0.5em;
   display: grid;
   width: 40%;
   grid-template-columns: 15% 30% 15% 0% 15% 30% 15%;
