@@ -35,8 +35,8 @@
   background-color: white;
   background: linear-gradient(
     to right,
-    white 20% 20%,
-     blue 20%
+    blue 20% 20%,
+    white 20%
   );
 }
 
