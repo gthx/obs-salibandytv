@@ -8,6 +8,7 @@
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
+  background-color: aliceblue;
 }
 
 .Numeric input[type=number]::-webkit-inner-spin-button,

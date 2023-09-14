@@ -47,6 +47,7 @@ export function Admin() {
   return (
     <div class={styles.Admin}>
       <h1>Ajanhallinta</h1>
+      <div style={{"background-color": score.timer_on ? 'red' : 'transparent', width: '100%', height: '10px', "border-radius": '5px'}}></div>
       <Numeric label="Erä" type="number" min={1} max={6} value={score.period} onChange={e => changePeriod(e.target.value)} />
       <div style={{display:'inline-grid'}}>
         <h2>Käynnissä</h2>
@@ -56,7 +57,7 @@ export function Admin() {
       </div>
       <Numeric label="Aika" type="number" min={0} max={2000} maxLength={4} value={'0000'} onChange={e => {setPeriodTime(e.target.value); e.target.blur();}} pattern='^(?:[0-2])?[0-9][0-5][0-9]$' 
       onFocus={setValueToCurrentTime} stepUp={stepUpTime} stepDown={stepDownTime} />
-      
+
       
       <h1>Tulostaulu</h1>
       <Numeric label="Koti" min={0} value={score.home} onChange={e => changeHomeGoals(e.target.value)} />

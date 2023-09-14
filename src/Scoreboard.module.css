@@ -1,25 +1,33 @@
 .Scoreboard {
-  cursor: none;
+  /* cursor: none; */
   width: 968px;
   height: 548px;
   background-color: transparent;
 }
 
 .Container {
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+  margin-top: 70px;
+  margin-left: 100px;
   display: grid;
-  width: 40%;
-  grid-template-columns: 15% 30% 15% 0% 15% 30% 15%;
-  grid-template-rows: 0.1em 1.5em 0.7em;
-  font-size: 36px;
+  width: 475px;
+  grid-template-columns: 70px 100px 60px 15px 60px 100px 70px;
+  grid-template-rows: 3px 70px 40px;
+  font-size: 30px;
   grid-template-areas: 
-    ". home-color  . . . away-color ."
-    "home-logo home-team home-score logo away-score away-team away-logo"
-    ". . period logo time . .";
+    ". home-color  home-color . away-color away-color ."
+    "home-logo home-team home-score divider away-score away-team away-logo"
+    ". . period time time . .";
   text-align: center;
   font-family: 'commandocommando';
   user-select: none;
+}
+
+.Divider {
+  grid-area: divider;
+  background-color: rgb(84, 44, 140);
+  color: white;
+  line-height: 70px;
+  font-weight: bold;
 }
 
 .HomeColor {
@@ -30,84 +38,78 @@
     white 20% 20%,
      blue 20%
   );
-  border-right: 1px solid rgb(84, 44, 140);
 }
 
 .HomeTeam {
   grid-area: home-team;
   background-color: rgb(84, 44, 140);
   color: white;
-  width: 100%;
-  line-height: 170%;
+  line-height: 70px;
 }
 
 .HomeScore {
   grid-area: home-score;
   background-color: rgb(84, 44, 140);
   color: white;
-  line-height: 170%;
+  line-height: 70px;
 }
 
 .AwayColor {
   grid-area: away-color;
   background: linear-gradient(
     to left,
-    white 20% 20%,
+    red 20% 20%,
     red 20%
   );
-  border-left: 1px solid rgb(84, 44, 140);
 }
 
 .AwayScore {
   grid-area: away-score;
   background-color: rgb(84, 44, 140);
   color: white;
-  width: 100%;
-  line-height: 170%;
+  line-height: 70px;
 }
 
 .AwayTeam {
   grid-area: away-team;
   background-color: rgb(84, 44, 140);
   color: white;
-  line-height: 170%;
+  line-height: 70px;
 }
 
 .Period {
   grid-area: period;
-  font-size: .5em;
+  font-size: 25px;
+  line-height: 40px;
   background-color: white;
   color: rgb(84, 44, 140);
-  border-left: 1px solid rgb(84, 44, 140);
-  border-bottom: 1px solid rgb(84, 44, 140);
 }
 
 .Time {
   grid-area: time;
-  font-size: .5em;
+  font-size: 25px;
+  line-height: 40px;
   background-color: white;
   color: rgb(84, 44, 140);
-  border-right: 1px solid rgb(84, 44, 140);
-  border-bottom: 1px solid rgb(84, 44, 140);
   font-kerning: none;
 }
 
 img:nth-of-type(1) {
   grid-area: home-logo;
   place-self: center;
+  transform: rotateZ(-3deg);
 }
 
 img:nth-of-type(2) {
   grid-area: away-logo;
   place-self: center;
+  transform: rotateZ(3deg) translate(-15px, 0);
 }
 
 .Logo {
-  height: 150%;
+  height: 90px;
   z-index: 10;
 }
-
-
 
 .header {
   background-color: #282c34;

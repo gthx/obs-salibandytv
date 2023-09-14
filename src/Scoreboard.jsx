@@ -6,13 +6,14 @@ export function Scoreboard() {
   return (
     <div class={styles.Scoreboard}>
       <div class={styles.Container}>
-        <img class={styles.Logo} src='https://kirkkonummirangers.fi/wp-content/uploads/2022/05/logo.png' />
+        <img class={styles.Logo} src='src/assets/logos/rangers.png' />
         <div class={styles.HomeColor}></div>
-        <div class={styles.HomeTeam}>{"RANG"}</div>
+        <div class={styles.HomeTeam}>{"RAN"}</div>
         <div class={styles.HomeScore}>{score.home}</div>
-        <img class={styles.Logo} src='https://upload.wikimedia.org/wikipedia/fi/8/89/Tikkurilan_Tiikerit.png' />
+        <div class={styles.Divider}>-</div>
+        <img class={styles.Logo} src='src/assets/logos/koovee.png' />
         <div class={styles.AwayColor}></div>
-        <div class={styles.AwayTeam}>{"TIIK"}</div>
+        <div class={styles.AwayTeam}>{"KOO"}</div>
         <div class={styles.AwayScore}>{score.away}</div>
         <div class={styles.Period}>{score.periodText}</div>
         <div class={styles.Time}>{score.timeText}</div>
