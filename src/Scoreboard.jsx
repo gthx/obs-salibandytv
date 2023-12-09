@@ -1,7 +1,7 @@
 import styles from './Scoreboard.module.css';
 import { useScore } from './ScoreContext';
 import homeLogo from './assets/logos/rangers.webp';
-import awayLogo from './assets/logos/o2.webp';
+import awayLogo from './assets/logos/lnm.webp';
 
 export function Scoreboard() {
   const [score] = useScore();
@@ -15,7 +15,7 @@ export function Scoreboard() {
         <div class={styles.Divider}>-</div>
         <img class={styles.Logo} src={awayLogo} />
         <div class={styles.AwayColor}></div>
-        <div class={styles.AwayTeam}>{"O2"}</div>
+        <div class={styles.AwayTeam}>{"LNM"}</div>
         <div class={styles.AwayScore}>{score.away}</div>
         <div class={styles.Period}>{score.periodText}</div>
         <div class={styles.Time}>{score.timeText}</div>
