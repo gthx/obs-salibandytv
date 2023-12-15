@@ -58,8 +58,8 @@
   grid-area: away-color;
   background: linear-gradient(
     to left,
-    red 20% 20%,
-    red 20%
+    blue 20% 20%,
+    blue 20%
   );
 }
 
@@ -71,6 +71,8 @@
 }
 
 .AwayTeam {
+  font-family: monospace;
+  font-weight: bolder;
   grid-area: away-team;
   background-color: rgb(84, 44, 140);
   color: white;
