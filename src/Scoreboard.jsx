@@ -1,7 +1,6 @@
 import styles from './Scoreboard.module.css';
 import { useScore } from './ScoreContext';
-import homeLogo from './assets/logos/rangers.webp';
-import awayLogo from './assets/logos/steamers.webp';
+import homeLogo from './assets/logos/rangers.webp'
 
 export function Scoreboard() {
   const [score] = useScore();
@@ -13,7 +12,7 @@ export function Scoreboard() {
         <div class={styles.HomeTeam}>{"RAN"}</div>
         <div class={styles.HomeScore}>{score.home}</div>
         <div class={styles.Divider}>-</div>
-        <img class={styles.Logo} src={awayLogo} />
+        <img class={styles.Logo} src={"https://cdn.torneopal.net/logo/salibandy/829x.webp"} />
         <div class={styles.AwayColor}></div>
         <div class={styles.AwayTeam}>{"HAP"}</div>
         <div class={styles.AwayScore}>{score.away}</div>
