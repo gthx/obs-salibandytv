@@ -58,7 +58,7 @@
   grid-area: away-color;
   background: linear-gradient(
     to left,
-    yellow 20% 20%,
+    red 20% 20%,
     black 20%
   );
 }
