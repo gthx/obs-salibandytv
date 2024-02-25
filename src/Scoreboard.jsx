@@ -12,9 +12,9 @@ export function Scoreboard() {
         <div class={styles.HomeTeam}>{"RAN"}</div>
         <div class={styles.HomeScore}>{score.home}</div>
         <div class={styles.Divider}>-</div>
-        <img class={styles.Logo} src={"https://cdn.torneopal.net/logo/salibandy/829x.webp"} />
+        <img class={styles.Logo} src={"https://cdn.torneopal.net/logo/salibandy/513x.webp"} />
         <div class={styles.AwayColor}></div>
-        <div class={styles.AwayTeam}>{"HAP"}</div>
+        <div class={styles.AwayTeam}>{"KON"}</div>
         <div class={styles.AwayScore}>{score.away}</div>
         <div class={styles.Period}>{score.periodText}</div>
         <div class={styles.Time}>{score.timeText}</div>
