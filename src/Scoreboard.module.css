@@ -71,8 +71,6 @@
 }
 
 .AwayTeam {
-  font-family: monospace;
-  font-weight: bolder;
   grid-area: away-team;
   background-color: rgb(84, 44, 140);
   color: white;
