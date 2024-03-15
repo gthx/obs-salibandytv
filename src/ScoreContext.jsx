@@ -10,6 +10,7 @@ const periodLength = 20 * 60;
 const defaultState = {
   period: 1,
   time_sec: 0,
+  timer_started: false,
   timer_on: false,
   home: 0,
   away: 0,
@@ -17,6 +18,10 @@ const defaultState = {
     return periodAbbrevation[this.period - 1];
   },
   get timeText() {
+    if(this.timer_started === false) {
+      return '--:--';
+    }
+
     if (this.time_sec === (this.period) * periodLength) {
       return '20:00';
     }
@@ -52,6 +57,7 @@ export function ScoreProvider(props) {
     setState('time_sec', periodStart + minutes * 60 + seconds);
   };
   const incrementTime = () => {
+    setState('timer_started', true);
     setState('time_sec', t => t + 1);
     const t = state.time_sec;
     if (t % periodLength === 0 ) {

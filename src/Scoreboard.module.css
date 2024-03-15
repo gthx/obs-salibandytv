@@ -35,8 +35,8 @@
   background-color: white;
   background: linear-gradient(
     to right,
-    blue 20% 20%,
-    white 20%
+    black 20% 20%,
+    rgb(255, 221, 0) 20%
   );
 }
 
@@ -58,8 +58,8 @@
   grid-area: away-color;
   background: linear-gradient(
     to left,
-    blue 20% 20%,
-    blue 20%
+    darkblue 20% 20%,
+    darkblue 20%
   );
 }
 
